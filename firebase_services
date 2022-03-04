@@ -1,0 +1,17 @@
+ 
+
+ Step 1: 
+ (create "Generate new private key" from Project settings/serviceaccounts and download to file)
+ "api_key.json"
+ 
+ Step 2:
+ (npm install firestore import/export from cmd)
+ cmd run code: " npm install -g node-firestore-import-export "
+
+ Step 3:
+ (export database in json format)
+ cmd run code: " firestore-export --accountCredentials C:\Users\USR\Downloads\api_key.json --backupFile C:\Users\USR\Downloads\jsonData.json "
+
+ Step 4:
+ (cd to C:\Users\USR\Downloads folder)
+ cmd run code: " firestore-export -a api_key.json -b jsonDataPretty.json -p " 
